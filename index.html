@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+        
+        <div id="app">
+            <span>{{ message }}</span>
+        </div>
+
+        
+
+        <div id="app-2">
+            <input id="app2-text" v-on:keyup.enter="addTodo" type="text" v-model="newTodo" placeholder="What Task you want to do..." />
+            <i id="app2-i" class="fa fa-pencil fa-lg"></i>
+        </div>
+        
+        <div id="app-for">
+            <ol>
+                <li v-for="(lang,index) in languages">
+                    <input type="checkbox" id="check" v-model="lang.completed">
+                    <!-- <i id="check"class="fa fa-check" v-on:click="changeStatus(index)"></i> -->
+                    <div id="text" :class="{completed:lang.completed}">{{lang.text}}</div>
+                    <i id="del" class="fa fa-times-circle" v-on:click="del(index)"></i>
+                    <!-- <span v-on:click="del(index)">&times</span> -->
+                </li>
+            </ol> 
+        </div>
+
+        
+
+        <script src="main.js"></script>
+    </body>
+</html>

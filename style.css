@@ -1,0 +1,125 @@
+
+body{
+    margin:0;
+    padding:0;
+    font-size:16px;
+    font-family: Helvetica Neue,Helvetica,sans-serif;
+    background-color:rgb(231, 229, 229);
+}
+
+#app{
+    font-size: 3rem;
+    padding:1.5rem;
+    border:1px solid ;
+    /* width: 25%; */
+    display:flex;   
+    /* /* position: relative; */
+    /* left:23%;  */
+    margin:0 auto;
+    background-color: #34495e;
+    color:#41b883;
+    /*  */
+}
+#app span{
+    margin:10px auto;
+}
+
+#app-2{
+    background-color:rgb(243, 243, 243);
+    /* border:1px solid ; */
+    padding-right: -50px;
+    margin:8px auto;
+    padding:1rem; 
+    width:35%;
+    display: flex;
+    align-items: center;
+}
+
+
+#app2-text{
+    height:50px;
+    width:100%;
+    padding:25px;
+    /* background-color:rgb(235, 234, 234); */
+    background-color: #34495e;
+    color:#4fe7a3;
+    border-radius:40px;
+    font-size: 18px;
+    border-style: hidden;
+}
+::placeholder{
+    color:rgb(233, 227, 227);
+}
+#app2-i{
+    /* margin-left:-38px; */
+    position: relative;
+    left:-40px;
+    color:#4fe7a3;
+}
+
+#app2-text:focus{
+    outline:none;
+    background-color: #24323f;
+    /* color:#c2c1c1; */
+    box-shadow: 0px 0px 4px rgb(199, 198, 198);
+
+}
+#app-for{
+    font-size: 1.5rem;
+    /* text-decoration: line-through ; */
+    /* color:#9b9494; */
+    background-color: rgb(243, 243, 243);
+    /* color:#a83987; */
+    color:#34495e;
+    width:35%;  
+    /* border:1px solid; */
+    margin:-3.9px auto;
+    padding:1rem;
+}
+ol{
+    padding: 0px;
+    margin:0 auto;
+    list-style: none;
+
+}
+#app-for li #check{
+    /* display:block; */
+    position:relative;
+    top:2px;
+    width:15px;
+    height: 15px;
+    /* color:green; */
+}
+
+#app-for li #text{
+    /* background-color: indianred; */
+    /* padding-left: 0.7    rem; */
+}
+
+#app-for li{
+    position: relative;
+    /* border-bottom:1px solid ; */
+    /* text-decoration: line-through; */
+    /* border-to    p:1px solid; */
+    width:100%;
+    margin: 0;
+    padding:12px 0px ; 
+    display: flex;  
+}
+
+.completed{
+    text-decoration: line-through;
+    /* color:grey; */
+    color:#9b9494
+}
+
+#app-for li #del{
+        /* border:1px solid; */
+        text-decoration: none;
+        position: absolute;
+        right: 20px;
+        color:#41b883;
+}
+
+
+
